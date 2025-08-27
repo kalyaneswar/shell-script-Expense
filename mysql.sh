@@ -46,7 +46,7 @@ systemctl start mysqld &>>$LOGFILE
 VALIDATE $? "Starting MySQL Server"
 
 # Check if MySQL root password is already set
-mysql -h db.kalyaneswar.online -uroot -p${mysql_root_password} -e 'show databases;' &>>$LOGFILE
+mysql -h db.kalyaneswar.site -uroot -p${mysql_root_password} -e 'show databases;' &>>$LOGFILE
 
 # If the MySQL root password is not set, configure it
 if [ $? -ne 0 ]; then
