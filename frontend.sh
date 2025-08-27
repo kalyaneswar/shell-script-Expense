@@ -72,7 +72,7 @@ unzip /tmp/frontend.zip &>>$LOGFILE  # Unzip the frontend content into the direc
 VALIDATE $? "Unzipping the code"  # Validate if the unzip was successful
 
 # Copy the custom Nginx configuration file (for the expense app) to the Nginx directory
-cp /home/ec2-user/shell-script-expense/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+cp /home/ec2-user/shell-script-Expense/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
 VALIDATE $? "Copying the config file"  # Validate if the config file was copied successfully
 
 # Restart Nginx to apply the new configuration and updated frontend code
