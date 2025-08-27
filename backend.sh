@@ -107,7 +107,7 @@ VALIDATE $? "Installing MySQL server"
 
 # Load the schema (database structure) into MySQL
 # This assumes that the backend.sql schema file exists at /app/schema/backend.sql
-mysql -h db.kalyaneswar.online -uroot -p${mysql_root_password} < /app/schema/backend.sql &>>$LOGFILE
+mysql -h db.kalyaneswar.site -uroot -p${mysql_root_password} < /app/schema/backend.sql &>>$LOGFILE
 VALIDATE $? "Loading the schema into MySQL"
 
 # Restart the backend service to apply changes
