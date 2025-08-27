@@ -86,7 +86,7 @@ VALIDATE $? "Install dependencies defined "
 
 # Setup the backend service as a systemd service (so it can start automatically)
 # Copy the systemd service unit file to the systemd directory
-cp /home/ec2-user/shell-script-expense/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+cp /home/ec2-user/shell-script-Expense/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 VALIDATE $? "Copying the backend.service file"
 
 # Reload the systemd manager configuration to recognize the new service
